@@ -1,0 +1,86 @@
+# Site name
+site_name: My Sample Project Official Documentation
+
+# Navigation menu
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+  - Install: install.md
+  - Configuration: configuration.md
+  - Example: example.md
+  - Development: development.md
+  - Deployment: deployment.md
+  - Release notes: release_notes.md
+  
+# Theme
+theme:
+    feaures:
+      - tabs
+    name: material
+    icon:
+      logo: material/cloud
+    font:
+      text: Ubuntu
+      code: Ubuntu Mono
+    static_templates:
+      - 404.html
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.highlight:
+  #     linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search
+  - pdf-export:
+      verbose: True
+      media_type: print
+      combined: True
+      combined_output_path: pdf/combined.pdf
+      enabled_if_env: ENABLE_PDF_EXPORT
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      type: datetime
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/yriahi
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/youssefriahi/    
+
+copyright: Copyright &copy; 2020 Youssef Riahi
