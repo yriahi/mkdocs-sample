@@ -2,7 +2,8 @@
 
 A sample for publishing documentation sites using the  `mkdocs` tool. The source of  documentation is Markdown.
 
-![sample](../img/sample.png)
+![Sample](https://github.com/yriahi/mkdocs-sample/blob/develop/img/sample.png)
+
 
 ## Requirements
 
