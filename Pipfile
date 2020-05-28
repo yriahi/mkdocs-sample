@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+
+[packages]
+mkdocs-material = "*"
+mkdocs-pdf-export-plugin = "*"
+mkpdfs-mkdocs = "*"
+mkdocs = "*"
+mkdocs-minify-plugin = "*"
+mkdocs-git-revision-date-localized-plugin = "*"
+
+[requires]
+python_version = "3.7"
