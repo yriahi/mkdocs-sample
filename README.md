@@ -2,7 +2,7 @@
 
 A sample for publishing documentation sites using the  `mkdocs` tool. The source of  documentation is Markdown.
 
-
+![sample](/Users/yriahi/Development/riahi-mkdocs-sample/sample.png)
 
 ## Requirements
 
