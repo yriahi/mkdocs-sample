@@ -2,7 +2,7 @@ name: Deploy MkDocs to Pages
 
 on:
   push:
-    branches: ["develop"]
+    branches: ["docs"]
   workflow_dispatch:
 
 permissions:
