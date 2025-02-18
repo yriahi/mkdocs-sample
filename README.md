@@ -57,6 +57,26 @@ Go to [http://127.0.0.1:8000](http://127.0.0.1:8000) to see the published HTML o
 
 
 
+## Using Docker
+
+You can also run this documentation site using Docker:
+
+### Build the Docker image
+
+```bash
+docker build -t mkdocs-site .
+```
+
+### Run the container
+
+```bash
+docker run -p 8000:8000 -v $(pwd):/docs mkdocs-site
+```
+
+The documentation site will be available at `http://localhost:8000`
+
+
+
 ## Misc.
 
 ### Dev dependencies
@@ -67,4 +87,3 @@ Use`--dev` argument to install dependencies used for development only: `pipenv i
 ### Theme
 
 This test using the following [mkdocs-material](https://github.com/squidfunk/mkdocs-material) theme.
-

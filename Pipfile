@@ -15,4 +15,4 @@ mkdocs-minify-plugin = "*"
 mkdocs-git-revision-date-localized-plugin = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.10"
