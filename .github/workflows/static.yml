@@ -35,6 +35,11 @@ jobs:
       - name: Build site
         run: cd docs && mkdocs build
 
+      - name: Debug - List generated files
+        run: |
+          echo "Contents of docs/site:"
+          ls -la docs/site
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
